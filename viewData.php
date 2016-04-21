@@ -4,14 +4,6 @@ require_once('TaskRepository.php');
 $res = new ItemRepository();
 
 $items = $res->getAll();
-
-echo $items;
-echo "0";
-foreach ($items as $item) {
-    echo $item->title;
-    echo "1";
-}
-
 ?>
 
 <hr />
