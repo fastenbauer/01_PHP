@@ -6,9 +6,6 @@
  * Time: 11:10
  */
 
-namespace RedBeanPHP;
-
-
 class category
 {
     private static $ids = 0;

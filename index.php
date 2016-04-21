@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="content-loader">
-    <?php require 'view-todoitems.php' ?>
+    <?php require 'viewData.php' ?>
 </div>
 
 <script src="assets/jquery-2.2.1.min.js"></script>

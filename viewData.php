@@ -1,7 +1,7 @@
 <?php
-require_once('ToDoRepository.php');
+require_once('TaskRepository.php');
 
-$res = new \RedBeanPHP\ToDoRepository();
+$res = new ItemRepository();
 
 $items = $res->getAll();
 
