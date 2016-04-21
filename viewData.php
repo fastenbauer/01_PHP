@@ -1,9 +1,15 @@
 <?php
 require_once('TaskRepository.php');
 
-$res = new ItemRepository();
+$taskRepo = new ItemRepository();
 
-$items = $res->getAll();
+$tasks = $taskRepo->getAll();
+
+echo $tasks.COUNT_NORMAL;
+
+foreach ($tasks as $task) {
+    echo $task;
+}
 ?>
 
 <hr />

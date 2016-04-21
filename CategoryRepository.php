@@ -6,9 +6,7 @@
  * Time: 11:03
  */
 
-require_once ('MRepository.php');
-
-class CategoryRepository implements MRepository
+class CategoryRepository
 {
 
 
