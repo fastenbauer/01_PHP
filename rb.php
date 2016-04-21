@@ -6695,7 +6695,7 @@ use RedBeanPHP\Cursor\NullCursor as NullCursor;
  * allows you to swap the repository instances using the freeze()
  * method.
  *
- * @file    RedBeanPHP/TaskRepository.php
+ * @file    RedBeanPHP/MRepository.php
  * @author  Gabor de Mooij and the RedBeanPHP community
  * @license BSD/GPLv2
  *

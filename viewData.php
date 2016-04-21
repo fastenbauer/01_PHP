@@ -1,14 +1,12 @@
 <?php
-require_once('TaskRepository.php');
+require_once('MRepository.php');
 
-$taskRepo = new ItemRepository();
+$taskreposit = new MRepository();
 
-$tasks = $taskRepo->getAll();
-
-echo $tasks.COUNT_NORMAL;
+$tasks = $taskreposit->getAll('task');
 
 foreach ($tasks as $task) {
-    echo $task;
+    echo $task->title;
 }
 ?>
 

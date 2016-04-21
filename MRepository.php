@@ -1,16 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jo
- * Date: 19.04.2016
- * Time: 11:03
- */
 
-require_once ('rb');
+require_once ('Task.php');
+require_once ('rb.php');
 
 R::setup('mysql:host=localhost; dbname=01php', 'root', '');
 
-class ItemRepository
+class MRepository
 {
     private $tasks = [];
 
@@ -19,9 +14,10 @@ class ItemRepository
         $this->tasks[(string)$task->getId()] = $task;
     }
 
-    public function getAll()
+    public function getAll($item)
     {
-        return $this->tasks;
+        $tasks = R::findAll($item);
+        return $tasks;
     }
 
     public function getByID($id)
@@ -32,7 +28,7 @@ class ItemRepository
             return null;
     }
 
-    public function deleteByID($id = null)
+    public function delete($id = null)
     {
         if ($id == null)
             unset($this->tasks);
