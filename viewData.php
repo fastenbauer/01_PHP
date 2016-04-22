@@ -4,10 +4,6 @@ require_once('MRepository.php');
 $taskreposit = new MRepository();
 
 $tasks = $taskreposit->getAll('task');
-
-foreach ($tasks as $task) {
-    echo $task->title;
-}
 ?>
 
 <hr />
@@ -20,7 +16,7 @@ foreach ($tasks as $task) {
         <tr>
             <th>ID</th>
             <th>Title</th>
-            <th>toFinish</th>
+            <th>Deadline</th>
             <th>Category</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -28,19 +24,21 @@ foreach ($tasks as $task) {
     </thead>
     <tbody>
     <?php
-    foreach ($items as $item)
+    foreach ($tasks as $task)
     {
         ?>
         <tr>
-            <?php
-            ?>
+            <td><?php echo $task->id ?></td>
+            <td><?php echo $task->title ?></td>
+            <td><?php echo $task->deadline ?></td>
+            <td><?php echo $task->category_id ?></td>
             <td>
                 <a data-id="<?php echo $row['id']; ?>" class="edit-link" href="#" title="Edit">
                     <span class="glyphicon glyphicon-pencil"></span>
                 </a>
             </td>
             <td>
-                <a data-id="<?php echo $row['id']; ?>" class="delete-link" href="#" title="Delete">
+                <a data-id="<?php echo $row['id']; ?>" class="edit-link" href="#" title="Edit">
                     <span class="glyphicon glyphicon-trash"></span>
                 </a>
             </td>

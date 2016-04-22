@@ -3,7 +3,15 @@
 require_once ('Task.php');
 require_once ('rb.php');
 
-R::setup('mysql:host=localhost; dbname=01php', 'root', '');
+
+try
+{
+    R::setup('mysql:host=localhost; dbname=01php', 'root', '');
+}
+catch (Exception $ex)
+{
+    return $ex;
+}
 
 class MRepository
 {
