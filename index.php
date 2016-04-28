@@ -11,6 +11,18 @@
         <link href="css/main.css" rel="stylesheet" />
     </head>
     <body>
+        <hr />
+        <div class="header">
+            <button class="btn btn-info" type="button" id="btn-view-data">
+                <span class="glyphicon glyphicon-refresh"></span> &nbsp; View Data
+            </button>
+
+            <button class="btn btn-info" type="button" id="btn-add-data">
+                <span class="glyphicon glyphicon-plus"></span> &nbsp; Add Data
+            </button>
+        </div>
+        <hr />
+
         <div class="content-loader">
             <?php require 'viewData.php' ?>
         </div>
