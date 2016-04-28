@@ -6,17 +6,17 @@ $taskreposit = new MRepository();
 $categories = $taskreposit->getAll('category');
 ?>
 
-<form method="post" id="saveData" action="#">
+<form method="post" id="addData" action="#">
     <table class="table table-bordered">
         <tr>
             <td>Title</td>
-            <td><input type="text" id="title" name="title" class="form-control" placeholder="ToDo z.B. Hausübung erledigen!" required /></td>
+            <td><input type="text" id="title" name="title" class="form-control" placeholder="ToDo e.g. finish homework!" required /></td>
         </tr>
         <tr>
             <td>Deadline</td>
             <td>
                 <div class="input-group date datepicker-me" data-provide="datepicker">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" placeholder="Set Date e.g. 22.05.2016" required>
                     <div class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </div>
@@ -37,7 +37,7 @@ $categories = $taskreposit->getAll('category');
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-info" name="submit" id="btn-submit">
-                    <span class="glyphicon glyphicon-save"></span> Save Data
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Save Data
                 </button>
             </td>
         </tr>

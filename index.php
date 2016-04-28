@@ -12,7 +12,7 @@
         <hr />
         <div class="header">
             <button class="btn btn-info" type="button" id="btn-view-data">
-                <span class="glyphicon glyphicon-refresh"></span> &nbsp; View Data
+                <span class="glyphicon glyphicon-triangle-left"></span>Back
             </button>
 
             <button class="btn btn-info" type="button" id="btn-add-data">
