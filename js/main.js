@@ -21,7 +21,7 @@ $(document).ready(function () {
         });
     });
 
-    $(".category-items").click(function () {
-        alert("haut hin!");
+    $('.datepicker-me').datepicker( {
+        format: 'dd-mm-yyyy',
     });
 });

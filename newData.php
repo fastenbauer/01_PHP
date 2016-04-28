@@ -14,7 +14,14 @@ $categories = $taskreposit->getAll('category');
         </tr>
         <tr>
             <td>Deadline</td>
-            <td><input type="datetime" name="deadline" class="form-control" placeholder="Datum z.B. 28.04.2016" required/></td>
+            <td>
+                <div class="input-group date datepicker-me" data-provide="datepicker">
+                    <input type="text" class="form-control">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </div>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>Category</td>

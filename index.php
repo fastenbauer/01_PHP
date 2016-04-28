@@ -6,8 +6,6 @@
         <link href="assets/datatables.min.css" rel="stylesheet" />
         <link href="bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
-        <link href="bootstrap/bootstrap-theme.css" rel="stylesheet" />
-        <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
     </head>
     <body>
@@ -32,6 +30,7 @@
         <script src="bootstrap/bootstrap.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
         <script src="bootstrap/npm.js"></script>
+        <script src="bootstrap/bootstrap-datepicker.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

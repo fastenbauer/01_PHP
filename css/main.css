@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../bootstrap/font/glyphicons-halflings-regular.eot);
+    src: url(../bootstrap/font/glyphicons-halflings-regular.svg);
+    src: url(../bootstrap/font/glyphicons-halflings-regular.ttf);
+    src: url(../bootstrap/font/glyphicons-halflings-regular.woff);
+    src: url(../bootstrap/font/glyphicons-halflings-regular.woff2);
+}
+
 #btn-view-data {
     display: none;
 }
