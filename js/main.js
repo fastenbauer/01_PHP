@@ -1,6 +1,3 @@
-
-var tablecount = 0;
-
 $(document).ready(function () {
     $("#btn-add-data").click(function () {
         $(".content-loader").fadeOut('fast', function() {
@@ -22,14 +19,8 @@ $(document).ready(function () {
 });
 
 $(document).on('submit', '#addData', function () {
-    $.POST("MRepository.php", $('#addData').serialize()).done(function (data) {
-       var result = JSON.parse(data);
-
-        if (result.success) {
-            viewDataTable();
-        }
-        else
-            alert("Ein Fehler ist aufgetreten: " + result.msg);
+    $.POST("MRepository.php", $(this).serialize(), function () {
+        alert("blabla!");
     });
     return false;
 });

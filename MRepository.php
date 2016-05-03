@@ -19,7 +19,7 @@ class MRepository
 
     public function save(Task $task)
     {
-        $this->tasks[(string)$task->getId()] = $task;
+        
     }
 
     public function getAll($item)
@@ -30,17 +30,9 @@ class MRepository
 
     public function getByID($id)
     {
-        if (isset($this->tasks[(string)$id]))
-            return $this->tasks[(string)$id];
-        else
-            return null;
     }
 
     public function delete($id = null)
     {
-        if ($id == null)
-            unset($this->tasks);
-        elseif (isset($this->tasks[(string)$id]))
-            unset($this->tasks[(string)$id]);
     }
 }

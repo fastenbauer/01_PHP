@@ -9,7 +9,7 @@
 class item
 {
     public $id;
-    public $description;
+    public $title;
     public $date;
     public $category;
 }
